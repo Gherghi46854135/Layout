@@ -29,3 +29,7 @@ header a:visited {
     margin-left: 24px;
 }
 
+/***************************DESCRIPTION-SECTION*********************************/
+#description-section{
+    background-color: rgb(37, 37, 37);
+}
