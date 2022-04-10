@@ -1,0 +1,31 @@
+/***************************HEADER-SECTION*********************************/
+
+header a {
+    color: #939393;
+    margin-left: 24px;
+   
+}
+
+header a:hover {
+    color: #939393;
+}
+header a:visited {
+    color: #939393;
+}
+
+
+
+/***************************HERO-SECTION*********************************/
+#hero-section{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+.row-hero{ 
+    max-width: fit-content;
+    font-weight: bolder;
+    margin-left: 24px;
+}
+
