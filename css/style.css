@@ -33,3 +33,14 @@ header a:visited {
 #description-section{
     background-color: rgb(37, 37, 37);
 }
+#border1{
+    border-top: 1px #939393 solid;
+    padding-top: 3px;
+    
+}
+#border1-2{
+    border-top: 1px #939393 solid;
+    border-bottom: 1px #939393 solid;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
