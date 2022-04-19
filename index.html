@@ -13,22 +13,38 @@
 
 <body>
     <header class="p-3">
-        <div class="container-fluid">
+        <div class="container-fluid px-5">
             <div class="row">
                 <div class="col-4">
                     <h1 class="fw-light text-start">My Website</h1>
                 </div>
-                <!-- d-none d-sm-block hide for mobile  make medium(Tablet) fix-->
-                <div class="col-8 pt-3 text-end">
+                <div class="col-8 align-self-center d-sm-block d-md-block d-lg-none d-xxl-none" id="menu">
+                    <div class="dropdown text-end">
+                        <button type="button" id="button-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img height="15px" src="../Layout/img/menu.png" class="" alt="menu">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="button-menu">
+                            <li><a class="text-decoration-none" href="#">Home</a></li>
+                            <li><a class="text-decoration-none" href="#">Portofolio</a></li>
+                            <li><a class="text-decoration-none" href="#">Staff</a></li>
+                            <li><a class="text-decoration-none" href="#">Features</a></li>
+                            <li><a class="text-decoration-none" href="#">Blog</a></li>
+                            <li><a class="text-decoration-none" href="#">Contact</a></li>
+                            <li><a class="text-decoration-none" href="#">Download</a></li>
+                        </ul>
+                        <!--Defeault dropdown menu BootStrap visible only on sm/md device-->
+                    </div>
+                </div>
+                <!--locked for large screen and beyond via lg-block class-->
+                <div class="d-none d-lg-block col-8 pt-3 text-end">
                     <a class="text-decoration-none" href="#">Home</a>
                     <a class="text-decoration-none" href="#">Portofolio</a>
                     <a class="text-decoration-none" href="#">Staff</a>
                     <a class="text-decoration-none" href="#">Features</a>
                     <a class="text-decoration-none" href="#">Blog</a>
                     <a class="text-decoration-none" href="#">Contact</a>
-                    <a class="text-decoration-none" href="#">Download</a>
+                    <a class="text-decoration-none pr-2" href="#">Download</a>
                 </div>
-
             </div>
         </div>
     </header>
@@ -42,6 +58,7 @@
                 </div>
             </div>
         </div>
+        <!--Hero section with bootstrap text class to match mockup-->
     </section>
     <section id="intro-section" class="py-5 px-5">
         <div class="container-fluid">
@@ -69,7 +86,7 @@
                 </div>
             </div>
         </div>
-        </div>
+        <!--Intro section content image with text, 1 col for sm and 4 for lg-->
     </section>
 
     <section id="about-section" class="px-5">
@@ -91,17 +108,17 @@
                     <p class="text-start fw-bold">Mountain High</p>
                     <p class="text-start">Travel</p>
                 </div>
-                <div class="col text-center pr-3">
+                <div class="col text-center pr-3 pb-5">
                     <img height="280" width="100%" src="../Layout/img/path-400x340.jpg" alt="path">
                     <p class="text-start fw-bold">When A Tree Falls</p>
                     <p class="text-start">Beautiful</p>
                 </div>
             </div>
         </div>
-        </div>
+        <!--About sectiont had to set height and width of the imgs to fit as in the mockup-->
     </section>
 
-    <section id="blog-section" class="px-5">
+    <section id="blog-section" class="p-5">
         <div class="container-fluid">
             <h3 class="py-4 border-bottom">FROM THE BLOG</h3>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-3">
@@ -120,7 +137,7 @@
                     <p class="fw-lighter text-start">Suspendisse orci nunc, sodales nec finibus eu, ultrices eget arcu.
                         Fusce consectetur malesuada placerat.</p>
                 </div>
-                <div class="text-center pr-2">
+                <div class="text-center pr-2 pb-5">
                     <img width="100%" src="../Layout/img/grass-640x340.jpg" alt="grass">
                     <p class="text-start fw-bold">A Walk In The Park</p>
                     <p class="text-start">Posted on August 10,2020</p>
@@ -129,6 +146,7 @@
                 </div>
             </div>
         </div>
+        <!--blog section used only widht for images as the fit as wanted-->
     </section>
 
     <section id="description-section" class="py-5 px-5">
@@ -136,11 +154,11 @@
             <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-3">
                 <div class="col">
                     <p class="text-white fw-bold">My Website</p>
-                    <p class="text-white-50 fw-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    <p class="text-white-50 fw-light pb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Ex rerum molestiae libero expedita quos voluptatem repellendus, corporis est aliquam atque
                         quidem odit fuga illo eum aspernatur cumque dicta quod ducimus!
                 </div>
-                <div class="align-self-center">
+                <div class="align-self-center pb-5">
                     <p class="text-white fw-bold">Recent Posts</p>
                     <p class="text-white-50" id="border1">How Now</p>
                     <p class="text-white-50" id="border1">Adrift bt Simon Christen</p>
@@ -148,7 +166,7 @@
                     <p class="text-white-50" id="border1">Time to Think</p>
                     <p class="text-white-50" id="border1-2">Field Of Dreams</p>
                 </div>
-                <div class="align-self-center">
+                <div class="align-self-center pb-5">
                     <p class="text-white fw-bold">Recent Work</p>
                     <p class="text-white-50" id="border1">Beautiful</p>
                     <p class="text-white-50" id="border1">Travel</p>
@@ -159,13 +177,15 @@
             </div>
         </div>
     </section>
+    <!--managed to set borders in css for this section-->
     <footer>
         <div class="row text-center">
             <div class="col-12">
-        <p class="pt-2 text-white-50 fw-light">© 2020 ITAcademy</p>
+                <p class="pt-2 text-white-50 fw-light">© 2020 ITAcademy</p>
+            </div>
         </div>
-    </div>
     </footer>
+    <!--footer as mockup background set in css-->
 
     <script src="../Layout/js/jquery-3.6.0.slim.min.js"></script>
     <script src="../Layout/js/bootstrap.bundle.min.js"></script>

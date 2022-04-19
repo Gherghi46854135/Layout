@@ -13,6 +13,13 @@ header a:visited {
     color: #939393;
 }
 
+#button-menu {
+border: none;
+background: none;
+color: gray;
+max-width: fit-content;
+}
+
 
 
 /***************************HERO-SECTION*********************************/
